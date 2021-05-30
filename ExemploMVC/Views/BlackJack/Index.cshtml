@@ -1,0 +1,78 @@
+﻿
+@{ ViewData["Title"] = "BlackJack"; }
+
+<h1 style="text-align:center">JOGO BLACKJACK</h1>
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<br />
+<br />
+<div class="container" style="        background-image: url(https://raw.githubusercontent.com/AlejandroRestrepo-dev/BlackJack2021JS/main/new.png)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" style="text-align: center">
+                <br />
+                <img alt="carta1" src="/images/0.png" height="300" width="200" name="cartas1" id="cartas1">
+                <br /><br />
+                <button type="button" class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" onclick="jogador1()" hidden>
+                    Jogar
+                </button>
+                <button type="button" class="btn btn-success" name="btn_parar_1" id="btn_parar_1" onclick="parar1()" hidden>
+                    Parar
+                </button>
+                <br /><br />
+                <h3 style="color:aqua">
+                    JOGADOR 1
+                </h3>
+            </div>
+            <div class="col-md-4" style="text-align: center">
+
+                <h5 style="color:aqua" name="tit_iniciar" id="tit_iniciar">
+                    INICIAR PARTIDA?
+                </h5>
+
+                <button type="button" class="btn btn-success" name="btn_iniciar" id="btn_iniciar" onclick="iniciarjogo()">
+                    Iniciar
+                </button>
+
+                <br /> <br />
+                <div class="row" style="background-color:black" name="placar" id="placar" hidden>
+                    <div class="col-md-4" style="color:aqua">
+                        <span class="badge badge-default" id="jogador1">Pontos: 0</span>
+                    </div>
+                    <div class="col-md-4" style="color:aqua">
+                        <span class="badge badge-default">X</span>
+                    </div>
+                    <div class="col-md-4" style="color:aqua">
+                        <span class="badge badge-default" id="jogador2">Pontos: 0</span>
+                    </div>
+                    <div class="col-md-4" style="color:aqua">
+                        <p class="badge badge-default" id="resultado" name="resultado" style="text-align:center">Aguardando resultado...</p>
+                    </div>
+                </div>
+
+                <div class="buttonreiniciar">
+                    <h5 style="color:aqua" name="tit_reiniciar" id="tit_reiniciar" hidden>
+                        REINICIAR PARTIDA?
+                    </h5>
+                    <button type="button" class="btn btn-success" name="btn_reiniciar" id="btn_reiniciar" onclick="reiniciar()" hidden>
+                        Reiniciar
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4" style="text-align: center">
+                <br />
+                <img alt="carta2" src="/images/0.png" height="300" width="200" name="cartas2" id="cartas2">
+                <br /><br />
+                <button type="button" class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" onclick="jogador2()" hidden>
+                    Jogar
+                </button>
+                <button type="button" class="btn btn-success" name="btn_parar_2" id="btn_parar_2" onclick="parar2()" hidden>
+                    Parar
+                </button>
+                <br /><br />
+                <h3 style="color: aqua">
+                    JOGADOR 2
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
